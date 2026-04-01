@@ -81,7 +81,8 @@ AI-powered legal assistant specializing in Indian law. Built with Next.js, FastA
 ### 1. Clone and navigate
 
 ```bash
-cd "C:/Drishti/Projects/Music"
+git clone https://github.com/your-username/legal-chatbot.git
+cd legal-chatbot
 ```
 
 ### 2. Backend Setup
