@@ -1,0 +1,69 @@
+CONSUMER PROTECTION ACT, 2019
+
+The Consumer Protection Act, 2019 replaced the Consumer Protection Act, 1986 and came into effect on July 20, 2020. It provides for protection of the interests of consumers and establishes authorities for timely and effective administration and settlement of consumer disputes.
+
+KEY DEFINITIONS (Section 2):
+
+Consumer: Any person who buys goods or hires services for consideration. It does not include a person who obtains goods for resale or for any commercial purpose. However, a person who buys goods and uses them exclusively for earning livelihood by self-employment is a consumer.
+
+Complaint: Any allegation in writing by a complainant regarding unfair trade practice, defective goods, deficiency in services, excess price charged, goods/services hazardous to life, or unfair/restrictive trade practices.
+
+Defect: Any fault, imperfection or shortcoming in the quality, quantity, potency, purity or standard which is required to be maintained by or under any law.
+
+Deficiency: Any fault, imperfection, shortcoming or inadequacy in the quality, nature and manner of performance of a service.
+
+CONSUMER RIGHTS (Section 2(9)):
+(i) Right to be protected against marketing of goods and services which are hazardous to life and property
+(ii) Right to be informed about quality, quantity, potency, purity, standard and price of goods or services
+(iii) Right to be assured access to a variety of goods and services at competitive prices
+(iv) Right to be heard and assured that consumers' interests will receive due consideration
+(v) Right to seek redressal against unfair trade practices, restrictive trade practices, or unscrupulous exploitation
+(vi) Right to consumer awareness
+
+CONSUMER DISPUTE REDRESSAL COMMISSIONS:
+
+1. District Consumer Disputes Redressal Commission (District Commission):
+   - Jurisdiction: Claims up to Rs. 1 crore
+   - Established in each district
+   - Presided over by a President who is a District Judge
+
+2. State Consumer Disputes Redressal Commission (State Commission):
+   - Jurisdiction: Claims exceeding Rs. 1 crore but not exceeding Rs. 10 crore
+   - Hears appeals from District Commission
+   - Established in each state
+
+3. National Consumer Disputes Redressal Commission (National Commission):
+   - Jurisdiction: Claims exceeding Rs. 10 crore
+   - Hears appeals from State Commission
+   - Located in New Delhi
+
+FILING A CONSUMER COMPLAINT:
+- Can be filed by the consumer, any recognized consumer association, the Central/State Government, or legal heirs in case of death
+- Can be filed at the place where the opposite party resides or carries on business, or where the cause of action arose
+- E-filing facility available at edaakhil.nic.in
+- No court fee is required for claims up to Rs. 5 lakh
+- Limitation period: 2 years from the date on which cause of action arose
+
+CENTRAL CONSUMER PROTECTION AUTHORITY (CCPA):
+- Established under Section 10 of the Act
+- Powers to regulate matters relating to violation of consumer rights
+- Can issue safety notices, order recall of goods/services
+- Can impose penalties for false/misleading advertisements
+- Can file complaints before District, State, or National Commission
+
+PRODUCT LIABILITY (Chapter VI):
+- Manufacturer, product service provider, and product seller can be held liable
+- Manufacturer liable for: manufacturing defect, design defect, deviation from manufacturing specifications, not conforming to express warranty, inadequate instructions or warnings
+- Product seller liable for exercising substantial control over design/manufacturing/labeling, altering/modifying the product, making express warranty
+- Product service provider liable for faulty/imperfect/deficient/inadequate service, act of omission causing harm, providing service not conforming to express warranty
+
+PENALTIES:
+- Manufacturing/selling/storing/distributing/importing adulterated products: imprisonment up to 6 months and fine up to Rs. 1 lakh (first conviction)
+- Manufacturing/selling/storing/distributing/importing spurious goods: imprisonment up to 1 year and fine up to Rs. 3 lakhs (first conviction)
+- If injury to consumer: imprisonment up to 7 years and fine up to Rs. 5 lakhs
+- If death of consumer: imprisonment not less than 7 years (extendable to life) and fine not less than Rs. 10 lakhs
+
+MEDIATION (Chapter V):
+- Consumer disputes can be resolved through mediation
+- Mediation cell to be attached to each District, State, and National Commission
+- No appeal against settlement through mediation

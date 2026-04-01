@@ -1,0 +1,81 @@
+INDIAN FAMILY LAW - KEY PROVISIONS
+
+HINDU MARRIAGE ACT, 1955
+
+Section 5 - Conditions for a Hindu Marriage:
+A marriage may be solemnized between any two Hindus if:
+(i) Neither party has a spouse living at the time of marriage
+(ii) At the time of marriage, neither party is incapable of giving valid consent due to unsoundness of mind, or suffers from mental disorder of such a kind or extent as to be unfit for marriage and procreation
+(iii) The bridegroom has completed 21 years and bride 18 years of age at the time of marriage
+(iv) The parties are not within degrees of prohibited relationship (unless custom permits)
+(v) The parties are not sapindas of each other (unless custom permits)
+
+Section 9 - Restitution of Conjugal Rights:
+When either the husband or the wife has, without reasonable excuse, withdrawn from the society of the other, the aggrieved party may apply by petition to the District Court for restitution of conjugal rights.
+
+Section 13 - Divorce:
+Either party to a marriage may present a petition for dissolution of marriage on grounds including:
+(i) Adultery
+(ia) Cruelty (mental or physical)
+(ib) Desertion for a continuous period of not less than two years
+(ii) Conversion to another religion
+(iii) Unsoundness of mind
+(iv) Leprosy (virulent and incurable form)
+(v) Venereal disease in communicable form
+(vi) Renunciation of the world by entering any religious order
+(vii) Not been heard of as being alive for a period of seven years or more
+
+Section 13B - Divorce by Mutual Consent:
+Both parties may together present a petition for dissolution of marriage on the ground that they have been living separately for one year or more and have not been able to live together, and have mutually agreed to dissolve the marriage. After the motion, the court shall not pass a decree before six months and not later than eighteen months. The Supreme Court in Amardeep Singh v. Harveen Kaur (2017) allowed waiver of the 6-month cooling-off period in certain cases.
+
+Section 24 - Maintenance Pendente Lite and Expenses of Proceedings:
+Where in any proceeding it appears to the court that either the wife or the husband has no independent income sufficient for his/her support and expenses of the proceeding, the court may order the respondent to pay the applicant expenses of the proceeding and monthly maintenance during the proceeding.
+
+Section 25 - Permanent Alimony and Maintenance:
+Any court exercising jurisdiction under this Act may order permanent alimony and maintenance, having regard to the respondent's income, the applicant's own income, the conduct of the parties, and other circumstances of the case.
+
+PROTECTION OF WOMEN FROM DOMESTIC VIOLENCE ACT, 2005
+
+Section 3 - Definition of Domestic Violence:
+Includes physical abuse, sexual abuse, verbal and emotional abuse, and economic abuse.
+Physical abuse: Any act causing bodily pain, harm, or danger to life, limb, or health.
+Sexual abuse: Any conduct of a sexual nature that abuses, humiliates, degrades, or otherwise violates the dignity of woman.
+Verbal and emotional abuse: Insults, ridicule, humiliation, name calling, accusations of having an affair, threats to cause physical pain.
+Economic abuse: Deprivation of economic or financial resources, disposal of household effects, prohibition from accessing resources that the aggrieved person is entitled to.
+
+Section 12 - Application to Magistrate:
+An aggrieved person, Protection Officer, or any person on behalf of the aggrieved person may present an application to the Magistrate seeking relief under the Act.
+
+Relief Available:
+- Protection Order (Section 18)
+- Residence Order (Section 19)
+- Monetary Relief (Section 20)
+- Custody Order (Section 21)
+- Compensation Order (Section 22)
+
+MAINTENANCE UNDER SECTION 125 CrPC (NOW SECTION 144 BNSS):
+- A person having sufficient means who neglects or refuses to maintain wife, children, or parents unable to maintain themselves can be ordered to pay maintenance
+- Applies to all religions (unlike personal laws)
+- Maximum maintenance: No upper limit (as per 2001 Amendment)
+- Wife entitled to maintenance if she has not committed adultery, or has not refused to live with husband without sufficient reason, or they are not living separately by mutual consent
+- Children (legitimate or illegitimate) entitled until they attain majority; unmarried daughter beyond majority if unable to maintain herself
+- Parents entitled if unable to maintain themselves
+
+MUSLIM PERSONAL LAW:
+
+Talaq (Divorce):
+- Triple Talaq (Talaq-e-Biddat) has been declared unconstitutional by the Supreme Court in Shayara Bano v. Union of India (2017) and criminalized under The Muslim Women (Protection of Rights on Marriage) Act, 2019
+- Talaq-e-Ahsan: Single pronouncement of talaq followed by abstinence from sexual intercourse during the period of iddat (3 menstrual cycles). Revocable during iddat period.
+- Talaq-e-Hasan: Three pronouncements of talaq during three successive tuhrs (periods of purity) with no intercourse during these three tuhrs.
+
+Mehr (Dower):
+- A sum of money or other property which the wife is entitled to receive from the husband in consideration of the marriage
+- Prompt Mehr: Payable on demand
+- Deferred Mehr: Payable on dissolution of marriage or on death of husband
+
+SPECIAL MARRIAGE ACT, 1954:
+- Provides for civil marriage for people of any religion
+- Marriage can be registered under this Act regardless of religion
+- 30-day notice period to the Marriage Officer
+- Minimum age: 21 for male, 18 for female
+- Parties should not be within degrees of prohibited relationship

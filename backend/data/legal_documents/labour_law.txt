@@ -1,0 +1,71 @@
+INDIAN LABOUR LAWS - KEY PROVISIONS
+
+India has consolidated 29 central labour laws into 4 Labour Codes (enacted but notification pending in several states):
+1. Code on Wages, 2019
+2. Industrial Relations Code, 2020
+3. Code on Social Security, 2020
+4. Occupational Safety, Health and Working Conditions Code, 2020
+
+EXISTING KEY LAWS (still applicable until Labour Codes are fully notified):
+
+PAYMENT OF WAGES ACT, 1936:
+- Applies to persons employed in factory, railway, or industrial establishments earning up to Rs. 24,000 per month
+- Wages must be paid before 7th of each month (for establishments with less than 1000 workers) or before 10th (for more than 1000 workers)
+- Authorized deductions: fines, absence from duty, damage/loss, housing accommodation, income tax, court orders, PF contributions, ESI, cooperative society dues, insurance premium, advance payment
+
+MINIMUM WAGES ACT, 1948:
+- The Central and State Governments fix minimum wages for scheduled employments
+- Wages vary by state and type of employment
+- Payment below minimum wages is an offence
+- Complaint can be filed before the authority appointed under the Act
+
+EMPLOYEES' PROVIDENT FUND AND MISCELLANEOUS PROVISIONS ACT, 1952 (EPF):
+- Applicable to establishments with 20 or more employees
+- Employee contribution: 12% of basic wages + DA
+- Employer contribution: 12% of basic wages + DA (3.67% to EPF, 8.33% to EPS)
+- Employee can contribute more (Voluntary Provident Fund)
+- EPF balance can be withdrawn on retirement (58 years), resignation (after 2 months of unemployment), for housing, medical emergency, education, marriage
+- Nomination is important; in absence of nomination, family members are entitled
+
+EMPLOYEES' STATE INSURANCE ACT, 1948 (ESI):
+- Applicable to factories/establishments with 10 or more employees
+- Applies to employees earning up to Rs. 21,000 per month
+- Employee contribution: 0.75% of wages
+- Employer contribution: 3.25% of wages
+- Benefits: Medical benefit, sickness benefit, maternity benefit, disablement benefit, dependants' benefit, funeral expenses
+
+PAYMENT OF GRATUITY ACT, 1972:
+- Applicable to establishments with 10 or more employees
+- Employee must complete 5 years of continuous service (4 years 240 days considered as 5 years in certain cases)
+- Formula: Last drawn salary x 15/26 x number of years of service
+- Maximum gratuity: Rs. 20 lakhs (w.e.f. March 29, 2018)
+- Gratuity is payable on superannuation, retirement, resignation, death, or disablement
+- Forfeiture: Only if termination is for willful omission or negligence causing damage, or for riotous or disorderly conduct or any act of violence, or for offence involving moral turpitude
+
+MATERNITY BENEFIT ACT, 1961 (as amended in 2017):
+- Applicable to establishments with 10 or more employees
+- Maternity leave: 26 weeks for first two surviving children (8 weeks pre-delivery, 18 weeks post-delivery)
+- 12 weeks for third child onwards
+- Adoptive and commissioning mothers: 12 weeks from date of adoption/handover
+- Work from home option may be available after 26 weeks
+- Creche facility mandatory for establishments with 50 or more employees
+- No termination during maternity leave
+
+SEXUAL HARASSMENT OF WOMEN AT WORKPLACE (PREVENTION, PROHIBITION AND REDRESSAL) ACT, 2013 (POSH ACT):
+- Every employer must constitute an Internal Complaints Committee (ICC) at each office/branch with 10 or more employees
+- Applies to all women, irrespective of age or employment status (regular, temporary, ad hoc, daily wage)
+- Sexual harassment includes: physical contact and advances, demand for sexual favours, sexually coloured remarks, showing pornography, any unwelcome sexual gesture
+- Complaint must be made within 3 months of the last incident (extendable by 3 months)
+- ICC must complete inquiry within 90 days
+- Penalties for non-compliance by employer: fine up to Rs. 50,000 (first offence), cancellation of license (repeated offence)
+
+INDUSTRIAL DISPUTES ACT, 1947:
+- Defines procedures for investigation and settlement of industrial disputes
+- Retrenchment: Employer must give one month notice or pay in lieu thereof, and compensation of 15 days' average pay for every completed year of service
+- Prior permission of appropriate Government required for lay-off, retrenchment, or closure in establishments with 100 or more workers
+- Workman who has been in continuous service for not less than one year cannot be retrenched without following proper procedure
+
+SHOPS AND ESTABLISHMENTS ACT:
+- State-specific legislation regulating conditions of work in shops and commercial establishments
+- Covers working hours, rest intervals, overtime, holidays, leave, employment of women and children, termination of service
+- Registration is mandatory for all shops and commercial establishments

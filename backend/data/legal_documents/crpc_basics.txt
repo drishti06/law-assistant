@@ -1,0 +1,78 @@
+CODE OF CRIMINAL PROCEDURE (CrPC), 1973 - KEY PROVISIONS
+
+Note: The CrPC has been replaced by the Bharatiya Nagarik Suraksha Sanhita (BNSS), 2023 effective from July 1, 2024.
+
+CHAPTER I - PRELIMINARY
+
+Section 2 - Definitions:
+(c) "Cognizable offence" means an offence for which a police officer may arrest without warrant.
+(l) "Non-cognizable offence" means an offence for which a police officer has no authority to arrest without warrant.
+
+CHAPTER XII - INFORMATION TO THE POLICE AND THEIR POWERS TO INVESTIGATE
+
+Section 154 - Information in Cognizable Cases (FIR):
+Every information relating to the commission of a cognizable offence, if given orally to an officer in charge of a police station, shall be reduced to writing by him or under his direction, and be read over to the informant. A copy shall be given to the informant free of cost. If the officer in charge refuses to record the information, the informant may send the substance of it in writing to the Superintendent of Police.
+
+Section 155 - Information as to Non-Cognizable Cases:
+When information is given to an officer in charge of a police station of the commission of a non-cognizable offence, he shall enter the substance in a book and refer the informant to the Magistrate.
+
+Section 156 - Police Officer's Power to Investigate Cognizable Cases:
+Any officer in charge of a police station may, without the order of a Magistrate, investigate any cognizable case. No proceeding of a police officer in any such case shall at any stage be called in question on the ground that the case was one which such officer was not empowered to investigate.
+
+Section 161 - Examination of Witnesses by Police:
+Any police officer making an investigation may examine orally any person supposed to be acquainted with the facts and circumstances of the case.
+
+Section 164 - Recording of Confessions and Statements:
+Any Metropolitan Magistrate or Judicial Magistrate may record any confession or statement made to him in the course of an investigation or at any time afterwards before the commencement of the inquiry or trial.
+
+CHAPTER XIV - CONDITIONS REQUISITE FOR INITIATION OF PROCEEDINGS
+
+Section 190 - Cognizance of Offences by Magistrates:
+A Magistrate may take cognizance of any offence: (a) upon receiving a complaint; (b) upon a police report; (c) upon information received from any person other than a police officer, or upon his own knowledge.
+
+Section 197 - Prosecution of Judges and Public Servants:
+When any person who is a Judge, Magistrate, or public servant not removable from his office save by or with the sanction of the Government is accused of any offence alleged to have been committed by him while acting or purporting to act in the discharge of his official duty, no Court shall take cognizance of such offence except with the previous sanction of the Government.
+
+CHAPTER XXIV - GENERAL PROVISIONS AS TO INQUIRIES AND TRIALS
+
+Section 313 - Power to Examine the Accused:
+The Court may, at any stage, without previously warning the accused, put such questions to him as the Court considers necessary. The accused shall not render himself liable to punishment by refusing to answer such questions, or by giving false answers to them.
+
+CHAPTER XXXIII - PROVISIONS AS TO BAIL AND BONDS
+
+Section 436 - In What Cases Bail to Be Taken:
+When any person other than a person accused of a non-bailable offence is arrested or detained without warrant by an officer in charge of a police station, or appears or is brought before a Court, and is prepared at any time while in the custody of such officer or at any stage of the proceeding before such Court to give bail, such person shall be released on bail.
+
+Section 437 - When Bail May Be Granted in Case of Non-Bailable Offence:
+When any person accused of, or suspected of, the commission of any non-bailable offence is arrested or detained without warrant by an officer in charge of a police station or appears or is brought before a Court other than the High Court or Court of Session, he may be released on bail. However, such person shall not be so released if there appear reasonable grounds for believing that he has been guilty of an offence punishable with death or imprisonment for life.
+
+Section 438 - Direction for Grant of Bail to Person Apprehending Arrest (Anticipatory Bail):
+Where any person has reason to believe that he may be arrested on accusation of having committed a non-bailable offence, he may apply to the High Court or the Court of Session for a direction that in the event of such arrest, he shall be released on bail.
+
+Section 439 - Special Powers of High Court or Court of Session Regarding Bail:
+A High Court or Court of Session may direct that any person accused of an offence and in custody be released on bail, and if the offence is of the nature specified in sub-section (3) of section 437, may impose any condition which it considers necessary.
+
+CHAPTER XXXVI - LIMITATION FOR TAKING COGNIZANCE
+
+Section 468 - Bar to Taking Cognizance After Lapse of Period of Limitation:
+(a) Six months if the offence is punishable only with fine.
+(b) One year if the offence is punishable with imprisonment not exceeding one year.
+(c) Three years if the offence is punishable with imprisonment exceeding one year but not exceeding three years.
+No limitation for offences punishable with imprisonment exceeding three years.
+
+IMPORTANT CONCEPTS:
+
+Cognizable vs Non-Cognizable Offences:
+- Cognizable: Police can arrest without warrant, can investigate without Magistrate's order. Examples: Murder, robbery, kidnapping.
+- Non-Cognizable: Police cannot arrest without warrant, needs Magistrate's order to investigate. Examples: Assault, cheating, defamation.
+
+Bailable vs Non-Bailable Offences:
+- Bailable: Accused has a right to bail. Police/Court must grant bail.
+- Non-Bailable: Bail is at the discretion of the Court. Not that bail cannot be given, just that it's not a matter of right.
+
+First Information Report (FIR):
+- Must be filed at the police station having jurisdiction
+- Can be filed by anyone, not just the victim
+- Zero FIR: Can be filed at any police station, regardless of jurisdiction
+- E-FIR: Many states now allow filing FIR online for certain offences
+- If police refuse to file FIR, complaint can be sent to SP or Magistrate under Section 156(3)

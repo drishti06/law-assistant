@@ -1,0 +1,63 @@
+INFORMATION TECHNOLOGY ACT, 2000 (IT ACT) - KEY PROVISIONS
+
+The Information Technology Act, 2000, amended significantly in 2008, is India's primary legislation dealing with cybercrime and electronic commerce.
+
+Section 43 - Penalty and Compensation for Damage to Computer, Computer System, etc.:
+If any person without permission of the owner accesses or secures access to a computer, downloads, copies or extracts data, introduces any computer virus, damages or causes to be damaged any computer, disrupts any computer, denies access to any authorized person, provides assistance to facilitate access in contravention of the Act, charges for services availed of by a person to the account of another person, or destroys/deletes/alters any information, he shall be liable to pay damages by way of compensation to the person so affected. Compensation up to Rs. 5 crore can be awarded.
+
+Section 65 - Tampering with Computer Source Documents:
+Whoever knowingly or intentionally conceals, destroys or alters any computer source code used for a computer, computer programme, computer system or computer network, when the source code is required to be kept or maintained by law, shall be punishable with imprisonment up to 3 years, or with fine up to Rs. 2 lakhs, or with both.
+
+Section 66 - Computer Related Offences:
+If any person, dishonestly or fraudulently, does any act referred to in section 43, he shall be punishable with imprisonment up to 3 years or with fine up to Rs. 5 lakhs or with both.
+
+Section 66A - Punishment for Sending Offensive Messages (STRUCK DOWN):
+This section was struck down by the Supreme Court in Shreya Singhal v. Union of India (2015) as unconstitutional for violating Article 19(1)(a) (freedom of speech and expression).
+
+Section 66B - Punishment for Dishonestly Receiving Stolen Computer Resource:
+Imprisonment up to 3 years, or fine up to Rs. 1 lakh, or both.
+
+Section 66C - Punishment for Identity Theft:
+Whoever fraudulently or dishonestly makes use of the electronic signature, password or any other unique identification feature of any other person, shall be punished with imprisonment up to 3 years and fine up to Rs. 1 lakh.
+
+Section 66D - Punishment for Cheating by Personation Using Computer Resource:
+Whoever by means of any communication device or computer resource cheats by personation, shall be punished with imprisonment up to 3 years and fine up to Rs. 1 lakh.
+
+Section 66E - Punishment for Violation of Privacy:
+Whoever intentionally or knowingly captures, publishes or transmits the image of a private area of any person without his/her consent, under circumstances violating the privacy of that person, shall be punished with imprisonment up to 3 years or fine not exceeding Rs. 2 lakhs, or both.
+
+Section 66F - Punishment for Cyber Terrorism:
+Whoever with intent to threaten the unity, integrity, security or sovereignty of India or to strike terror in the people, denies access to any authorized person to a computer resource, or attempts to penetrate a computer resource without authorization, or introduces any computer contaminant, and causes death, injuries, damage to property, etc., commits cyber terrorism. Punishment: Imprisonment which may extend to imprisonment for life.
+
+Section 67 - Punishment for Publishing or Transmitting Obscene Material:
+First conviction: imprisonment up to 3 years and fine up to Rs. 5 lakhs.
+Second conviction: imprisonment up to 5 years and fine up to Rs. 10 lakhs.
+
+Section 67A - Punishment for Publishing Material Containing Sexually Explicit Act:
+First conviction: imprisonment up to 5 years and fine up to Rs. 10 lakhs.
+Second conviction: imprisonment up to 7 years and fine up to Rs. 10 lakhs.
+
+Section 67B - Punishment for Publishing Child Sexually Exploitative Material:
+First conviction: imprisonment up to 5 years and fine up to Rs. 10 lakhs.
+Second conviction: imprisonment up to 7 years and fine up to Rs. 10 lakhs.
+
+Section 69 - Power to Issue Directions for Interception or Monitoring:
+The Central Government or State Government may direct any agency to intercept, monitor or decrypt any information transmitted through any computer resource, in the interest of sovereignty or integrity of India, defense of India, security of the State, friendly relations with foreign States, public order, or for prevention of cognizable offence.
+
+Section 72 - Breach of Confidentiality and Privacy:
+Any person who has secured access to any electronic record, information, or correspondence under the provisions of this Act, and discloses such information without the consent of the person concerned, shall be punished with imprisonment up to 2 years, or fine up to Rs. 1 lakh, or both.
+
+Section 79 - Exemption from Liability of Intermediary:
+An intermediary shall not be liable for any third-party information, data, or communication link made available or hosted by him if: (a) the function is limited to providing access to a communication system, (b) the intermediary does not initiate the transmission, select the receiver, or modify the information, (c) the intermediary observes due diligence while discharging duties, and (d) the intermediary upon receiving actual knowledge or upon being notified, removes or disables access to the material.
+
+DIGITAL PERSONAL DATA PROTECTION ACT, 2023:
+- Enacted on August 11, 2023
+- Applies to processing of digital personal data within India
+- Also applies to processing outside India if related to offering goods/services in India
+- Key provisions include: consent-based data processing, rights of data principal (right to access, correction, erasure, grievance redressal, and nomination), duties of data fiduciary, Data Protection Board of India for enforcement
+- Penalties up to Rs. 250 crore for certain violations
+
+CYBER CRIME REPORTING:
+- Cybercrime complaints can be filed at cybercrime.gov.in (National Cyber Crime Reporting Portal)
+- Toll-free helpline: 1930
+- Can also file FIR at local police station or cyber crime cell
