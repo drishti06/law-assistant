@@ -9,32 +9,65 @@ type Props = {
   isTyping?: boolean;
 };
 
+function renderFormattedText(text: string) {
+  // Split into lines and render bullet points and bold text properly
+  const lines = text.split("\n");
+  return lines.map((line, i) => {
+    // Process bold markers **text**
+    const parts = line.split(/(\*\*.*?\*\*)/g);
+    const rendered = parts.map((part, j) => {
+      if (part.startsWith("**") && part.endsWith("**")) {
+        return <strong key={j} className="font-semibold text-gray-900 dark:text-gray-100">{part.slice(2, -2)}</strong>;
+      }
+      return <span key={j}>{part}</span>;
+    });
+
+    const isBullet = line.trim().startsWith("•") || line.trim().startsWith("-");
+    if (isBullet) {
+      return <li key={i} className="ml-1 text-sm text-gray-700 dark:text-gray-300 leading-relaxed list-none">{rendered}</li>;
+    }
+    if (line.trim() === "") return <div key={i} className="h-1.5" />;
+    return <p key={i} className="text-sm text-gray-700 dark:text-gray-300 leading-relaxed">{rendered}</p>;
+  });
+}
+
 function formatSection(label: string, text: string) {
   if (!text) return null;
   return (
     <div className="mb-3">
       <span className="font-semibold text-primary-700 dark:text-primary-400 text-sm">{label}</span>
-      <p className="mt-0.5 text-gray-700 dark:text-gray-300 text-sm leading-relaxed whitespace-pre-wrap">{text}</p>
+      <div className="mt-0.5">{renderFormattedText(text)}</div>
     </div>
   );
 }
 
 function parseAssistantMessage(content: string) {
   const sections: { label: string; key: string; pattern: RegExp }[] = [
-    { label: "Short Answer", key: "short_answer", pattern: /\*?\*?Short Answer\*?\*?:\s*(.*?)(?=\*?\*?Explanation|$)/s },
-    { label: "Explanation", key: "explanation", pattern: /\*?\*?Explanation\*?\*?:\s*(.*?)(?=\*?\*?Relevant Law|$)/s },
-    { label: "Relevant Law / Section", key: "relevant_law", pattern: /\*?\*?Relevant Law\/Section\*?\*?:\s*(.*?)(?=\*?\*?Next Steps|$)/s },
-    { label: "Next Steps", key: "next_steps", pattern: /\*?\*?Next Steps\*?\*?:\s*(.*?)(?=\*?\*?Disclaimer|$)/s },
-    { label: "Disclaimer", key: "disclaimer", pattern: /\*?\*?Disclaimer\*?\*?:\s*(.*?)$/s },
+    // New format
+    { label: "What This Means", key: "short_answer", pattern: /\*?\*?What This Means\*?\*?:?\s*(.*?)(?=\*?\*?(?:Your Rights|Relevant Laws|What To Do)|$)/s },
+    { label: "Your Rights", key: "explanation", pattern: /\*?\*?Your Rights\*?\*?:?\s*(.*?)(?=\*?\*?(?:Relevant Laws|What To Do)|$)/s },
+    { label: "Relevant Laws", key: "relevant_law", pattern: /\*?\*?Relevant Laws\*?\*?:?\s*(.*?)(?=\*?\*?(?:What To Do|Get Help)|$)/s },
+    { label: "What To Do Now", key: "next_steps", pattern: /\*?\*?What To Do Now\*?\*?:?\s*(.*?)(?=\*?\*?(?:Get Help|⚠️|Important)|$)/s },
+    { label: "Get Help", key: "help", pattern: /\*?\*?Get Help\*?\*?:?\s*(.*?)(?=\*?\*?⚠️|⚠️|$)/s },
+    // Old format (backward compat)
+    { label: "Short Answer", key: "short_answer", pattern: /\*?\*?(?:Short Answer|What This Means For You)\*?\*?:?\s*(.*?)(?=\*?\*?(?:Explanation|Your Rights)|$)/s },
+    { label: "Explanation", key: "explanation", pattern: /\*?\*?Explanation\*?\*?:?\s*(.*?)(?=\*?\*?Relevant Law|$)/s },
+    { label: "Relevant Law / Section", key: "relevant_law", pattern: /\*?\*?Relevant Law\/Section\*?\*?:?\s*(.*?)(?=\*?\*?(?:Next Steps|What You Should)|$)/s },
+    { label: "Next Steps", key: "next_steps", pattern: /\*?\*?(?:Next Steps|What You Should Do Now)\*?\*?:?\s*(.*?)(?=\*?\*?(?:Disclaimer|Where To Get|⚠️|Get Help)|$)/s },
+    { label: "Where To Get Help", key: "help", pattern: /\*?\*?Where To Get Help\*?\*?:?\s*(.*?)(?=\*?\*?⚠️|⚠️|$)/s },
+    { label: "Disclaimer", key: "disclaimer", pattern: /\*?\*?Disclaimer\*?\*?:?\s*(.*?)$/s },
   ];
 
   const parsed: { label: string; text: string }[] = [];
+  const usedKeys = new Set<string>();
   let hasStructure = false;
 
   for (const section of sections) {
+    if (usedKeys.has(section.key)) continue;
     const match = content.match(section.pattern);
     if (match && match[1]?.trim()) {
       parsed.push({ label: section.label, text: match[1].trim() });
+      usedKeys.add(section.key);
       hasStructure = true;
     }
   }

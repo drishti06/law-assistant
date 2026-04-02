@@ -31,8 +31,8 @@ def _get_index_paths() -> tuple[str, str]:
 
 def chunk_documents(documents: list[dict]) -> list[dict]:
     splitter = RecursiveCharacterTextSplitter(
-        chunk_size=500,
-        chunk_overlap=50,
+        chunk_size=1000,
+        chunk_overlap=200,
         separators=["\n\n", "\n", ". ", " ", ""],
     )
     chunks = []
@@ -165,7 +165,9 @@ def initialize_rag():
     if load_index():
         return
 
-    documents = load_documents_from_directory()
+    documents = load_documents_from_directory("data/legal_documents")
+    documents += load_documents_from_directory("data/legal_pdfs")
+
     if not documents:
         logger.warning("No legal documents found. RAG will not be available until documents are added.")
         return
@@ -195,24 +197,96 @@ def add_document(title: str, content: str, category: str = "general"):
     logger.info(f"Added document '{title}' with {len(new_chunks)} chunks")
 
 
-def retrieve(query: str, top_k: int = 5) -> list[dict]:
+QUERY_EXPANSION_MAP = {
+    # Rent / Tenancy
+    "room": "tenant eviction rent agreement landlord Transfer of Property Act Rent Control",
+    "rent": "tenant eviction rent agreement landlord Transfer of Property Act Rent Control",
+    "landlord": "tenant eviction rent agreement Transfer of Property Act Rent Control",
+    "owner": "tenant landlord eviction rent agreement property",
+    "eviction": "tenant landlord rent agreement Transfer of Property Act Rent Control",
+    "pg": "paying guest tenant landlord rent agreement",
+    "lease": "tenant landlord rent agreement Transfer of Property Act",
+    # Theft / Robbery
+    "stole": "theft robbery IPC Section 378 FIR police",
+    "stolen": "theft robbery IPC Section 378 FIR police",
+    "robbery": "theft robbery dacoity IPC Section 390 FIR",
+    "theft": "theft IPC Section 378 379 FIR police complaint",
+    # Assault / Violence
+    "beat": "assault hurt grievous IPC Section 323 324 351 FIR",
+    "attack": "assault hurt grievous IPC Section 323 324 FIR",
+    "threaten": "criminal intimidation threat IPC Section 503 506",
+    # Cheating / Fraud
+    "cheated": "cheating fraud IPC Section 420 dishonesty",
+    "scam": "cheating fraud IPC Section 420 dishonesty",
+    "fraud": "cheating fraud IPC Section 420 dishonesty forgery",
+    # Domestic issues
+    "dowry": "dowry harassment IPC Section 498A domestic violence",
+    "domestic violence": "domestic violence Protection of Women Act DV Act",
+    "husband": "domestic violence dowry harassment maintenance family law",
+    "wife": "domestic violence dowry harassment maintenance family law",
+    # Employment
+    "fired": "termination employment labour law industrial disputes unfair dismissal",
+    "salary": "wages payment labour commissioner Employment Act",
+    "employer": "employment labour law industrial disputes wages",
+    # Accident
+    "accident": "motor vehicle accident compensation negligence MV Act claim tribunal",
+    # Property
+    "property": "property dispute Transfer of Property Act registration title deed",
+    "land": "property land dispute revenue record title deed registration",
+    # Online / Cyber
+    "online": "cyber crime IT Act digital fraud online",
+    "hack": "cyber crime IT Act hacking unauthorized access",
+    # Noise / Nuisance
+    "neighbour": "nuisance noise pollution complaint CrPC Section 133",
+    "neighbor": "nuisance noise pollution complaint CrPC Section 133",
+    "noise": "noise pollution nuisance complaint environment",
+}
+
+
+def _expand_query(query: str) -> str:
+    """Expand a plain-language query with legal terms for better retrieval."""
+    query_lower = query.lower()
+    expansions = set()
+    for keyword, legal_terms in QUERY_EXPANSION_MAP.items():
+        if keyword in query_lower:
+            expansions.add(legal_terms)
+    if expansions:
+        expanded = query + " " + " ".join(expansions)
+        logger.info(f"Query expanded: '{query[:60]}...' -> added legal terms")
+        return expanded
+    return query
+
+
+def retrieve(query: str, top_k: int = 5, max_distance: float = 1.5) -> list[dict]:
     if _index is None or not _chunks:
         logger.warning("FAISS index not initialized. Returning empty results.")
         return []
 
     model = _get_embedding_model()
-    query_embedding = model.encode([query], normalize_embeddings=True)
+
+    # Expand plain-language query with legal terms
+    expanded_query = _expand_query(query)
+    query_embedding = model.encode([expanded_query], normalize_embeddings=True)
     query_embedding = np.array(query_embedding, dtype="float32")
 
-    distances, indices = _index.search(query_embedding, min(top_k, len(_chunks)))
+    # Fetch more candidates, then filter by relevance
+    fetch_k = min(top_k * 3, len(_chunks))
+    distances, indices = _index.search(query_embedding, fetch_k)
 
     results = []
     for i, idx in enumerate(indices[0]):
         if idx < len(_chunks) and idx >= 0:
+            distance = float(distances[0][i])
+            # Filter out chunks that are too far (irrelevant)
+            if distance > max_distance:
+                continue
             results.append({
                 **_chunks[idx],
-                "score": float(distances[0][i]),
+                "score": distance,
             })
+            if len(results) >= top_k:
+                break
 
-    logger.debug(f"Retrieved {len(results)} chunks for query: {query[:80]}...")
+    logger.info(f"Retrieved {len(results)} relevant chunks for query: {query[:80]}... "
+                f"(filtered from {fetch_k} candidates, max_distance={max_distance})")
     return results

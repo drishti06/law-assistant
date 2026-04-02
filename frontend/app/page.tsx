@@ -1,5 +1,6 @@
 "use client";
 
+import { useState, useEffect } from "react";
 import Link from "next/link";
 import { useTheme } from "@/components/ThemeProvider";
 import ChatWidget from "@/components/ChatWidget";
@@ -80,6 +81,12 @@ const laws = [
 
 export default function Home() {
   const { theme, toggleTheme } = useTheme();
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+
+  useEffect(() => {
+    const token = localStorage.getItem("token");
+    setIsLoggedIn(!!token);
+  }, []);
 
   return (
     <div className="min-h-screen bg-white dark:bg-gray-900">
@@ -105,12 +112,20 @@ export default function Home() {
                 </svg>
               )}
             </button>
-            <Link href="/login" className="text-sm font-medium text-gray-600 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">
-              Sign In
-            </Link>
-            <Link href="/register" className="btn-primary text-sm px-4 py-2">
-              Get Started
-            </Link>
+            {isLoggedIn ? (
+              <Link href="/chat" className="btn-primary text-sm px-4 py-2">
+                Go to Chat
+              </Link>
+            ) : (
+              <>
+                <Link href="/login" className="text-sm font-medium text-gray-600 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">
+                  Sign In
+                </Link>
+                <Link href="/register" className="btn-primary text-sm px-4 py-2">
+                  Get Started
+                </Link>
+              </>
+            )}
           </div>
         </div>
       </nav>
@@ -135,8 +150,8 @@ export default function Home() {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/register" className="btn-primary text-lg px-10 py-4 shadow-lg shadow-primary-600/25 hover:shadow-primary-600/40 transition-all">
-              Start Free
+            <Link href={isLoggedIn ? "/chat" : "/register"} className="btn-primary text-lg px-10 py-4 shadow-lg shadow-primary-600/25 hover:shadow-primary-600/40 transition-all">
+              {isLoggedIn ? "Go to Chat" : "Start Free"}
             </Link>
             <a href="#features" className="border border-gray-300 dark:border-gray-600 hover:border-primary-400 text-gray-700 dark:text-gray-200 hover:text-primary-700 dark:hover:text-primary-400 font-medium py-4 px-10 rounded-lg transition-colors text-center text-lg">
               Learn More
@@ -241,19 +256,22 @@ export default function Home() {
             </div>
             <div className="space-y-4 ml-2">
               <div>
-                <p className="text-sm font-semibold text-primary-700 dark:text-primary-400">Short Answer</p>
-                <p className="text-sm text-gray-700 dark:text-gray-300">Section 498A deals with cruelty by a husband or his relatives towards a married woman. It is a cognizable, non-bailable offence.</p>
+                <p className="text-sm font-semibold text-primary-700 dark:text-primary-400">What This Means</p>
+                <p className="text-sm text-gray-700 dark:text-gray-300">• Section 498A protects married women from cruelty by husband or in-laws</p>
+                <p className="text-sm text-gray-700 dark:text-gray-300">• It is a cognizable, non-bailable offence</p>
               </div>
               <div>
-                <p className="text-sm font-semibold text-primary-700 dark:text-primary-400">Relevant Law/Section</p>
-                <p className="text-sm text-gray-700 dark:text-gray-300">Section 498A, Indian Penal Code, 1860. Punishment: imprisonment up to 3 years and fine.</p>
+                <p className="text-sm font-semibold text-primary-700 dark:text-primary-400">Relevant Laws</p>
+                <p className="text-sm text-gray-700 dark:text-gray-300">• Section 498A, IPC — up to 3 years imprisonment and fine</p>
               </div>
               <div>
-                <p className="text-sm font-semibold text-primary-700 dark:text-primary-400">Next Steps</p>
-                <p className="text-sm text-gray-700 dark:text-gray-300">1) File an FIR at the nearest police station. 2) Consult a lawyer specializing in family/criminal law. 3) File for protection under the Domestic Violence Act, 2005.</p>
+                <p className="text-sm font-semibold text-primary-700 dark:text-primary-400">What To Do Now</p>
+                <p className="text-sm text-gray-700 dark:text-gray-300">• File an FIR at nearest police station</p>
+                <p className="text-sm text-gray-700 dark:text-gray-300">• Consult a family/criminal lawyer</p>
+                <p className="text-sm text-gray-700 dark:text-gray-300">• File for protection under Domestic Violence Act, 2005</p>
               </div>
               <div className="bg-amber-50 dark:bg-amber-900/20 text-amber-800 dark:text-amber-300 text-xs px-3 py-2 rounded-lg border border-amber-200 dark:border-amber-800">
-                Disclaimer: This is for educational purposes only. Consult a qualified lawyer for specific advice.
+                This is general legal info, not legal advice. Consult a lawyer or your nearest DLSA.
               </div>
             </div>
           </div>
@@ -267,15 +285,23 @@ export default function Home() {
             Ready to Get Legal Answers?
           </h2>
           <p className="text-primary-100 mb-8 text-lg">
-            Sign up for free and start asking questions about Indian law right away.
+            {isLoggedIn ? "Head to the chat and ask your legal questions." : "Sign up for free and start asking questions about Indian law right away."}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/register" className="bg-white text-primary-700 hover:bg-primary-50 font-semibold py-3.5 px-10 rounded-lg transition-colors text-lg shadow-lg">
-              Create Free Account
-            </Link>
-            <Link href="/login" className="border border-white/40 hover:border-white text-white font-medium py-3.5 px-10 rounded-lg transition-colors text-lg">
-              Sign In
-            </Link>
+            {isLoggedIn ? (
+              <Link href="/chat" className="bg-white text-primary-700 hover:bg-primary-50 font-semibold py-3.5 px-10 rounded-lg transition-colors text-lg shadow-lg">
+                Go to Chat
+              </Link>
+            ) : (
+              <>
+                <Link href="/register" className="bg-white text-primary-700 hover:bg-primary-50 font-semibold py-3.5 px-10 rounded-lg transition-colors text-lg shadow-lg">
+                  Create Free Account
+                </Link>
+                <Link href="/login" className="border border-white/40 hover:border-white text-white font-medium py-3.5 px-10 rounded-lg transition-colors text-lg">
+                  Sign In
+                </Link>
+              </>
+            )}
           </div>
         </div>
       </section>
@@ -291,8 +317,14 @@ export default function Home() {
             AI-powered legal assistant for Indian law. Not a substitute for professional legal advice.
           </p>
           <div className="flex gap-4 text-sm text-gray-500 dark:text-gray-400">
-            <Link href="/login" className="hover:text-primary-600 dark:hover:text-primary-400 transition-colors">Login</Link>
-            <Link href="/register" className="hover:text-primary-600 dark:hover:text-primary-400 transition-colors">Register</Link>
+            {isLoggedIn ? (
+              <Link href="/chat" className="hover:text-primary-600 dark:hover:text-primary-400 transition-colors">Chat</Link>
+            ) : (
+              <>
+                <Link href="/login" className="hover:text-primary-600 dark:hover:text-primary-400 transition-colors">Login</Link>
+                <Link href="/register" className="hover:text-primary-600 dark:hover:text-primary-400 transition-colors">Register</Link>
+              </>
+            )}
           </div>
         </div>
       </footer>
